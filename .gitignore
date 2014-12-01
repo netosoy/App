@@ -5,8 +5,9 @@
 # Files for the Dalvik VM
 *.dex
 
-# Java class files
-*.class
+# Bitmap images
+*.png
+*.jpg
 
 # Generated files
 bin/
