@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context="com.example.myfirstapp2.SelectTopology" >
+
+    <Space 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/text_1ElementTopo"
+            style="@style/TextStyleAppThme"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/text_selection_elmt1"
+            android:textColor="@color/apptheme_text_color"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+    
+    <Space 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+
+    <ScrollView
+        style="@drawable/apptheme_fastscroll_thumb_holo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideOverlay" >
+        
+        <LinearLayout
+            android:id="@+id/topologyBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+ 
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" >
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_toRightOf="@+id/button1"
+            android:onClick="goBack"
+            android:text="@string/button_back" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="73dp"
+            android:onClick="customElemet"
+            android:text="@string/button_customize" />
+
+    </RelativeLayout>
+
+</LinearLayout>

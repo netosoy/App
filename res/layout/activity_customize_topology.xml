@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+        
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"/>
+        
+        <TextView
+            android:id="@+id/text_Customize"
+            style="@style/TextStyleAppThme"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/text_select_inputs"
+            android:textSize="20sp" />
+        
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"/>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" >
+
+        <ImageView
+            android:id="@+id/imageViewCustomize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/customize" />
+        
+        <Spinner
+            android:id="@+id/spinner4"
+            style="@style/SpinnerAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/imageViewCustomize"
+            android:layout_centerVertical="true"
+            android:entries="@array/numbers" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/SpinnerAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/imageViewCustomize"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/numbers" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            style="@style/SpinnerAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageViewCustomize"
+            android:entries="@array/numbers" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            style="@style/SpinnerAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewCustomize"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/numbers" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:onClick="customizeReady"
+            android:text="@string/button_ready" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/button1"
+            android:onClick="goHome"
+            android:text="@string/button_upHome" />
+
+    </RelativeLayout>
+
+</LinearLayout>

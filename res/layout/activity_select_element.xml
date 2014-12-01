@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical" >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+        
+        <Space 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"/>
+        
+        <TextView
+            android:id="@+id/text_elementSelection"
+            style="@style/TextStyleAppThme"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/text_selection"
+            android:textAppearance="@style/TextStyleAppThme"
+            android:textSize="20sp" />
+        
+        <Space 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.25" >
+        
+        <Button
+            android:id="@+id/element_btn4"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="fourthElement"
+            android:text="@string/button_element4"
+            android:textSize="14sp" />
+        
+        <Button
+            android:id="@+id/element_btn3"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="thirdElement"
+            android:text="@string/button_element3" />
+
+        <Button
+            android:id="@+id/element1_btn"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_element1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/element2_btn"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="secondElement"
+            android:text="@string/button_element2" />
+    </RelativeLayout>
+    
+        <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.15" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/ButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="goBack"
+            android:text="Back" />
+
+    </RelativeLayout>
+</LinearLayout>

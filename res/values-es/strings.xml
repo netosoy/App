@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">ElectApp</string>
+    
+    <!--  Main Activity -->
+    <string name="button_goOut">Salir</string>
+    <string name="button_start">Inicio</string>
+    <string name="introductionTextView">Esta aplicación le ayudará a reconocer detalles
+        constructivos de elementos en Redes de Distribución Eléctrica Subterranea</string>
+    
+    <!-- SelectElement Activity -->
+    <string name="text_selection">Seleccione la estructura para ver detalles</string>
+    <string name="button_element1">Canalización</string>
+    <string name="button_element2">Caja MT</string>
+    <string name="button_element3">Cja BT</string>
+    <string name="button_element4">Fosa Trans.</string>
+    
+    <!-- SelectTopology Activity-->
+    <string name="text_selection_elmt1">seleccione la topología</string>
+    <string name="button_customize">Personalizar</string>
+    
+    <string-array name="MVboxes_imgs">
+        <item>@drawable/topology1_1</item>
+        <item>@drawable/topology1_2</item>
+        <item>@drawable/topology1_3</item>
+        <item>@drawable/topology1_4</item>
+    </string-array>
+    
+    <string-array name="canliz_imgs">
+        <item>@drawable/topology2_1</item>
+        <item>@drawable/topology2_2</item>
+        <item>@drawable/topology2_3</item>
+        <item>@drawable/topology2_4</item>
+        <item>@drawable/topology2_5</item>
+    </string-array>
+    
+    <string-array name="LVboxes_imgs">
+        <item>@drawable/topology1_1</item>
+        <item>@drawable/topology1_2</item>
+        <item>@drawable/topology1_3</item>
+        <item>@drawable/topology1_4</item>
+        <item>@drawable/topology1_5</item>
+    </string-array>
+    
+    <string-array name="trns_imgs">
+        <item>@drawable/topology2_1</item>
+        <item>@drawable/topology2_2</item>
+    </string-array>
+    
+    <!-- CustomizeTopology Activity-->
+    <string name="text_select_inputs">Seleccione el número de entradas</string>
+    <string name="button_ready">Listo</string>
+    <string name="button_upHome">Principal</string>
+    
+    <string-array name="numbers">
+        <item >Ninguno</item>
+        <item>Uno</item>
+        <item>Dos</item>
+        <item>Tres</item>
+        <item>Cuatro</item>
+        <item>Cinco</item>
+        <item>Seis</item>
+        <item>Siete</item>
+        <item>Ocho</item>
+        <item>Nueve</item>
+    </string-array>
+    
+    <!-- CustomReady Activity -->
+    <string name="recomendations">
+		&#8250; Insertar tubos de 40 cédula SRD-40\n
+        &#8250; Distacia mínima entre cajas de 100 mts\n
+        › Usar concreto reforzado\n
+        </string>
+    <string name="button_viewDetails">Mostrar detalles</string>
+    
+    <string-array name="canliz_details">
+        <item>@drawable/canalizacion_1</item>
+        <item>@drawable/canalizacion_2</item>
+        <item>@drawable/canalizacion_3</item>
+        <item>@drawable/canalizacion_4</item>
+        <item>@drawable/canalizacion_5</item>
+    </string-array>
+    
+    <string-array name="LVbox_details">
+        <item>@drawable/topology1_1</item>
+        <item>@drawable/topology1_2</item>
+        <item>@drawable/topology1_3</item>
+        <item>@drawable/topology1_4</item>
+        <item>@drawable/topology1_5</item>
+    </string-array>
+    
+    <string-array name="MVbox_details">
+        <item>@drawable/topology1_1</item>
+        <item>@drawable/topology1_2</item>
+        <item>@drawable/topology1_3</item>
+        <item>@drawable/topology1_4</item>
+    </string-array>
+    
+    <string-array name="trns_details">
+        <item>@drawable/canalizacion_1</item>
+        <item>@drawable/canalizacion_2</item>
+    </string-array>
+    
+    <!-- ViewDetails Activity -->
+    <string name="text_details">Detalles</string>    
+    
+    <!-- Common Resources-->
+    <string name="button_back">Atrás</string>
+    <string name="action_settings">Configuraciones</string>
+    
+</resources>
